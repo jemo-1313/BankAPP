@@ -1,0 +1,31 @@
+public class Client {
+    private int Id;
+    private long  personalID;
+    private String name;
+    private String lastname;
+    private String gmail;
+    private String IBAN;
+
+
+    Client (int Id ,long  personalID, String name ,String lastname ,String gmail ,String IBAN ){
+        this.Id=Id;
+        this.personalID=personalID;
+        this.name=name;
+        this.lastname=lastname;
+        this.gmail=gmail;
+        this.IBAN=IBAN;
+    }
+
+
+    long getPersonalID(){
+        return personalID;
+    }
+
+    @Override
+    public String toString(){
+
+        return "|ID| "+personalID+" |Name| "+name+" |Lastname| "+lastname+"|Mail| "+gmail+"|IBAN| "+IBAN;
+
+    }
+
+}
