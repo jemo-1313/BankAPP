@@ -1,0 +1,13 @@
+public class accounts {
+
+    public String iban(int clientNumber) {
+
+        String countryCode = "GE";
+        String bankCode =  String.format("%05d" , Math.round(Math.random()* 10000 )) + "GJ";
+        String uniquePart = String.format("%09d", clientNumber);
+
+        return countryCode + bankCode + uniquePart;
+    }
+
+
+}
